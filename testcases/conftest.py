@@ -4,8 +4,8 @@ from selenium import webdriver
 import pytest
 
 
-#@pytest.fixture(scope="class")
-@pytest.fixture()
+@pytest.fixture(scope="class")
+#@pytest.fixture(autouse=True)
 def setup(request):
 
     global driver

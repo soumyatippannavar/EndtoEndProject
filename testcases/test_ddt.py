@@ -29,7 +29,3 @@ class Test_Datadriven(BaseClass):
             time.sleep(2)
             self.lp.loggedout()
             time.sleep(2)
-
-
-
-
