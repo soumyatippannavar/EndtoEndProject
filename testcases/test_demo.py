@@ -1,7 +1,4 @@
 import time
-
-import pytest
-
 from PageObject.Demoform import Pagedemo
 from utilities import readfromexcel
 from utilities.CommonUtlity import BaseClass
@@ -25,7 +22,7 @@ class Test_demo_form(BaseClass):
             time.sleep(2)
             self.dm.enterformdetails(name, email, ph)
             time.sleep(2)
-    @pytest.mark.sanity
+    #@pytest.mark.sanity
     def test_menubar(self):
         self.dm1 = Pagedemo(self.driver)
         self.movrtoele(self.dm1.solutionmenubar())

@@ -1,10 +1,9 @@
 import time
-import undetected_chromedriver as webdriver
+#import undetected_chromedriver as webdriver
 from selenium import webdriver
 import pytest
 
-
-@pytest.fixture(scope="class")
+@pytest.fixture(scope="class",autouse=True)
 #@pytest.fixture(autouse=True)
 def setup(request):
 
