@@ -26,9 +26,9 @@ class Pagedemo:
         time.sleep(1)
         self.driver.find_element(By.NAME, self.phone).send_keys(phone)
         time.sleep(1)
-        #self.driver.find_element(By.XPATH,self.captch).click()
+
+    def pagerefresh(self):
         self.driver.refresh()
-        time.sleep(3)
 
     def countrydropdown(self):
         return self.driver.find_element(By.CSS_SELECTOR,self.country_css)

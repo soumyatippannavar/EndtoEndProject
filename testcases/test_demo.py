@@ -17,11 +17,13 @@ class Test_demo_form(BaseClass):
             name = readfromexcel.readdata(self.path, "Sheet1", r, 1)
             email = readfromexcel.readdata(self.path, "Sheet1", r, 2)
             ph = readfromexcel.readdata(self.path, "Sheet1", r, 3)
+            country = readfromexcel.readdata(self.path,"Sheet1", r, 4)
 
-            self.selectcls(1, self.dm.countrydropdown())
-            time.sleep(2)
             self.dm.enterformdetails(name, email, ph)
             time.sleep(2)
+            self.selectcls(country, self.dm.countrydropdown())
+            time.sleep(1)
+            self.dm.pagerefresh()
     #@pytest.mark.sanity
     def test_menubar(self):
         self.dm1 = Pagedemo(self.driver)
