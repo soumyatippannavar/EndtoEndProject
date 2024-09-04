@@ -15,12 +15,12 @@ class Test_Datadriven(BaseClass):
         #self.Logger = self.loggingfun()
         #self.Logger.info("******lodded in with 1st credentials")
 
-        self.Rowcount = readfromexcel.getRow(self.path, "Sheet1")
+        self.Rowcount = readfromexcel.getRow(self.path, "Sheet2")
 
 
         for r in range(2, self.Rowcount+1):
-            username = readfromexcel.readdata(self.path,"Sheet1",r,1)
-            password = readfromexcel.readdata(self.path, "Sheet1", r, 2)
+            username = readfromexcel.readdata(self.path,"Sheet2",r,1)
+            password = readfromexcel.readdata(self.path, "Sheet2", r, 2)
 
             self.lp.setup_user(username)
             time.sleep(1)
