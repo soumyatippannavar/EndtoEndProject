@@ -13,8 +13,8 @@ def setup(request):
         driver = webdriver.Chrome()
     elif browser == 'edge':
         driver = webdriver.Edge()
-    driver.get("https://admin-demo.nopcommerce.com/admin/")
-    #driver.get("https://www.orangehrm.com/en/30-day-free-trial")
+    #driver.get("https://admin-demo.nopcommerce.com/admin/")
+    driver.get("https://www.orangehrm.com/en/30-day-free-trial")
     driver.maximize_window()
     time.sleep(2)
     request.cls.driver = driver
