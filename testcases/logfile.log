@@ -50,3 +50,6 @@
 2024-08-21 17:32:05,824 :INFO : test_demopage :***logged in with 3 credentials***
 2024-08-21 17:34:17,832 :INFO : test_demopage :***logged in with 3 credentials***
 2024-08-21 17:41:16,858 :INFO : test_demopage :***logged in with 3 credentials***
+2024-09-26 11:26:22,144 :INFO : test_verify_title :Your store. Login
+2024-09-26 11:26:22,144 :DEBUG : test_verify_title :Your store. Login
+2024-09-26 11:32:45,935 :INFO : test_demopage :***logged in with 3 credentials***
