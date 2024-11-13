@@ -9,8 +9,8 @@ class Test_demo_form(BaseClass):
 
     def test_demopage(self):
         self.dm = Pagedemo(self.driver)
-        self.Logger = self.loggingfun()
-        self.Logger.info("***logged in with 3 credentials***")
+        #self.Logger = self.loggingfun()
+        #testself.Logger.info("***logged in with 3 credentials***")
 
         self.Rowcount = readfromexcel.getRow(self.path, "Sheet1")
         for r in range(2, self.Rowcount + 1):

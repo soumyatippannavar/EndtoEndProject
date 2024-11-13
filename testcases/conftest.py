@@ -5,7 +5,6 @@ import pytest
 from testcases import test_demo
 from testcases.test_demo import Test_demo_form
 
-
 @pytest.fixture(scope="class",autouse=True)
 #@pytest.fixture(autouse=True)
 def setup(request):
@@ -23,7 +22,6 @@ def setup(request):
     request.cls.driver = driver
     yield
     driver.close()
-
 
 def pytest_addoption(parser):
     parser.addoption("--browser",default="chrome")

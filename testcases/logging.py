@@ -1,8 +1,8 @@
-import logging
+##import logging
 
-class Logs:
+"""class Logs:
 
-    def loggingDemo(self):
+    #def loggingDemo(self):
 
         logger = logging.getLogger(__name__)
 
@@ -19,7 +19,4 @@ class Logs:
     #logger.warning("Something is in warning mode")
     #logger.error("A Major error has happend")
     #logger.critical("Critical issue")
-        return logger
-
-
-
+        return logger"""

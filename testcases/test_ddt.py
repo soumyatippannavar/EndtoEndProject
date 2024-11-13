@@ -1,7 +1,6 @@
 import time
 import pytest
 from PageObject.Loginpage import Login
-from testcases.logging import Logs
 from utilities.CommonUtlity import BaseClass
 from utilities import readfromexcel
 
